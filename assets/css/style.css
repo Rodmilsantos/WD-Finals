@@ -1,0 +1,167 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #2a2a72, #5ca0c79a);
+    color: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #0b1023;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar nav ul li {
+    margin-left: 20px;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    position: relative;
+}
+
+.navbar nav ul li a:hover {
+    color: #ffba00;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content .rating {
+    width: 150px;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.hero-buttons .btn {
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-buttons .btn.primary {
+    background-color: #ffba00;
+    color: #000;
+}
+
+.hero-buttons .btn.secondary {
+    background-color: transparent;
+    border: 2px solid #ffba00;
+    color: #ffba00;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.footer {
+    background-color: #0b1023;
+    color: #ffffff;
+    padding: 30px 50px; /* Increased padding for better spacing */
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px; /* Increased padding for better spacing */
+}
+
+.footer-section h3 {
+    font-size: 1.5em; /* Larger font size for section headings */
+    margin-bottom: 15px; /* Adjusted margin for better spacing */
+}
+
+.footer-section p {
+    font-size: 1.1em; /* Slightly larger font size for text */
+    margin-bottom: 10px; /* Adjusted margin for better spacing */
+}
+
+.footer-logo {
+    max-width: 150px; /* Adjust size as needed */
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px; /* Adjusted margin for better spacing */
+}
+
+.social-icons .social-icon {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px; /* Increased margin for better spacing */
+    font-size: 1.2em; /* Larger font size for social icons */
+}
+
+.social-icons .social-icon:hover {
+    color: #ffba00;
+}
+
+.footer-bottom {
+    margin-top: 30px; /* Increased margin for better spacing */
+    font-size: 0.9em; /* Slightly larger font size for copyright notice */
+}

@@ -1,0 +1,256 @@
+/* style.css */
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #2c2c2c;
+    color: #fff;
+    background-image: url('/assets/img/aesthetic-landscape-reflection-background-hd-wallpaper-sr10012410-1706502139247-cover.webp'); /* Replace 'path/to/your/image.jpg' with your actual image path */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #1e1e1e;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeInLeft 1s ease-in-out;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.profile h1 {
+    margin: 10px 0 0;
+}
+
+.profile p {
+    margin: 5px 0;
+}
+
+.contact-info, .language-skills, .technical-skills {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.contact-info h2, .language-skills h2, .technical-skills h2 {
+    margin-bottom: 10px;
+}
+
+.skill {
+    margin-bottom: 10px;
+}
+
+.skill p {
+    margin-bottom: 5px;
+}
+
+.skill-bar {
+    width: 100%;
+    background-color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 10px;
+    background-color: #e91e63;
+    border-radius: 5px;
+    animation: grow 2s ease-in-out;
+}
+
+.content {
+    width: 75%;
+    padding: 20px;
+    animation: fadeInRight 1s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.intro h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.intro p {
+    font-size: 18px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.intro button {
+    background-color: #e91e63;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    animation: fadeIn 2s ease-in-out;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.intro button:hover {
+    background-color: #d81b60;
+    transform: scale(1.1);
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.stat {
+    text-align: center;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.stat h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #e91e63;
+}
+
+.stat p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.services {
+    margin-bottom: 40px;
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.service {
+    background-color: #333;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.service button {
+    background-color: #e91e63;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.service button:hover {
+    background-color: #d81b60;
+    transform: scale(1.1);
+}
+
+/* Keyframes for Animations */
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes grow {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}

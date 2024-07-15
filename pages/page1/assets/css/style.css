@@ -1,0 +1,228 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;500&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #282c34;
+    color: #fff;
+    animation: fadeIn 2s ease-in;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #3a3f47;
+    padding: 20px 0;
+    animation: slideDown 1s ease-out;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+    animation: fadeIn 1s ease-in;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6f61;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    background: url('https://scontent.fmnl5-2.fna.fbcdn.net/v/t39.30808-6/448761383_1151482826119922_6186855072424559984_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFazTJl0tKdK5BoSEipjQ_8gKK5dg7PS3eAorl2Ds9Ldxwu4ezzk2PwQow_a6OwRjDgdBrd61pny8hmWmMemGeJ&_nc_ohc=ofS258oemHoQ7kNvgG7WUrA&_nc_ht=scontent.fmnl5-2.fna&oh=00_AYB0cNq2SUvUAc-1OYlaeW_3zlnhngxs0N1OmP0BFEj_Pw&oe=669A233C') no-repeat center center/cover;
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    animation: fadeIn 2s ease-in;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    animation: fadeInUp 1s ease-in;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    animation: fadeInUp 1s ease-in;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    animation: fadeInUp 1.2s ease-in;
+}
+
+.hero .btn {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 5px;
+    animation: fadeInUp 1.4s ease-in;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #ff3d2e;
+}
+
+.about {
+    text-align: center;
+    padding: 50px 0;
+    background: #3a3f47;
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 2s ease-in;
+}
+
+.about::before, .about::after {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: #ff6f61;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.about::before {
+    top: -150px;
+    left: -150px;
+    animation: floating 6s ease-in-out infinite;
+}
+
+.about::after {
+    bottom: -150px;
+    right: -150px;
+    animation: floating 8s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.about-content {
+    max-width: 600px;
+    margin: 0 auto;
+    animation: fadeInUp 1.5s ease-in;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    animation: fadeInUp 1.5s ease-in;
+}
+
+.about p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    animation: fadeInUp 1.7s ease-in;
+}
+
+.about .btn {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 5px;
+    display: inline-block;
+    animation: fadeInUp 1.9s ease-in;
+    transition: background-color 0.3s ease;
+}
+
+.about .btn:hover {
+    background-color: #ff3d2e;
+}
+
+.services {
+    text-align: center;
+    padding: 50px 0;
+    animation: fadeIn 2s ease-in;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    animation: fadeInUp 2s ease-in;
+}
+
+.services p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+    animation: fadeInUp 2.2s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
