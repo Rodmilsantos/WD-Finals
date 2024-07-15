@@ -59,11 +59,11 @@
 <!-- The following are just sample -->
 Description of the project in details.
 
-Guiding Question:
+
 - This project is my final work on my personal portfolio
 - To showcase my skills in css and html
 - MultiPage Website
-- What technology used and how it is used
+- html for structure, css for the design
 
 ### Key Components
 <!-- TODO: List of Key Components -->
