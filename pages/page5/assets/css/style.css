@@ -7,7 +7,7 @@ body {
     box-sizing: border-box;
     background-color: #2c2c2c;
     color: #fff;
-    background-image: url('/assets/img/aesthetic-landscape-reflection-background-hd-wallpaper-sr10012410-1706502139247-cover.webp'); /* Replace 'path/to/your/image.jpg' with your actual image path */
+    background-image: url('https://img.freepik.com/free-photo/japan-background-digital-art_23-2151546131.jpg'); 
     background-size: cover;
     background-position: center;
 }
